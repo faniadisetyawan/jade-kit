@@ -1,0 +1,24 @@
+{
+  "name": "jade-kit",
+  "version": "1.0.0",
+  "description": "powerful tool to create dynamic html pages",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/faniadisetyawan/jade-kit.git"
+  },
+  "keywords": [
+    "jade",
+    "gulp",
+    "browser-sync"
+  ],
+  "author": "faniadisetyawan@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/faniadisetyawan/jade-kit/issues"
+  },
+  "homepage": "https://github.com/faniadisetyawan/jade-kit#readme"
+}
