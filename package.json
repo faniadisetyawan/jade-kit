@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/faniadisetyawan/jade-kit/issues"
   },
-  "homepage": "https://github.com/faniadisetyawan/jade-kit#readme"
+  "homepage": "https://github.com/faniadisetyawan/jade-kit#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
 }
