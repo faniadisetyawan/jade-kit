@@ -1,0 +1,19 @@
+doctype html
+html(lang="en")
+	head
+		meta(charset='utf-8') 
+		meta(http-equiv='X-UA-Compatible' content='IE=edge') 
+		meta(name='viewport' content='width=device-width, initial-scale=1')
+		block title
+		link(rel='stylesheet', href='assets/vendor/vendor.css')
+		link(rel='stylesheet', href='assets/css/app.css')
+	body
+		block navbar
+
+		include ../partials/navbar.jade
+
+		block content
+
+		include ../partials/footer.jade
+
+		script(src='assets/vendor/vendor.js')

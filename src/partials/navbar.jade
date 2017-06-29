@@ -1,0 +1,17 @@
+- var menu = {'Home': '/', 'About': '/about.html'};
+
+nav.navbar.navbar-toggleable-md.navbar-light.bg-faded
+	div.container
+		button.navbar-toggler.navbar-toggler-right(type='button', data-toggle='collapse', data-target='#navbarToggler', aria-controls='navbarToggler', aria-expanded='false', aria-label='Toggle navigation')
+			span.navbar-toggler-icon
+		a.navbar-brand(href='/') JADE
+
+		div.collapse.navbar-collapse#navbarToggler
+			ul.navbar-nav.mr-auto.mt-2.mt-md-0
+				each val, key in menu
+					if selected === key
+						li.nav-item.active
+							a.nav-link(href=val)= key
+					else
+						li.nav-item
+							a.nav-link(href=val)= key
