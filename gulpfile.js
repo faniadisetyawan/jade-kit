@@ -59,6 +59,11 @@ gulp.task('scripts', function() {
 
 gulp.task('images', function() {
 	gulp.src('src/assets/images/**/*')
+		.pipe(gulp.dest('dist/assets/images'))
+});
+
+gulp.task('images-prod', function() {
+	gulp.src('src/assets/images/**/*')
 		.pipe(imagemin([
 			imagemin.gifsicle({interlaced: true}),
 	    imagemin.jpegtran({progressive: true}),
@@ -152,3 +157,5 @@ gulp.task('serve', ['stylesheet', 'javascript', 'watch'], function() {
 });
 
 gulp.task('default', ['serve']);
+
+gulp.task('build', ['jade', 'sass', 'scripts', 'stylesheet', 'javascript', 'images-prod']);
